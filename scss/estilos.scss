@@ -1,0 +1,223 @@
+$negro-background: #000000c9;
+$width-promedio: 250px;
+$height: 800px; 
+$width: 800px;
+
+*{
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+body{
+    background-image: url(../images/blucactus-fondo-oscuro-paginas-web-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+h1.titulo{
+    color: white;
+    text-shadow: 3px 3px 3px  #181818;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+    background: linear-gradient(177deg,#000, #4848482e);
+    
+}
+
+.sectionNav {
+    float: left;
+    width: 20%;
+    font-weight: bold;
+    position: fixed;
+        nav {
+            border-radius: 10px;
+            background-color: $negro-background;
+            margin-left: 10px;
+            box-shadow: 2px 2px 2px #181818;
+                ul li {
+                    list-style: none;
+                    padding: 20px;
+                    a{
+                        text-decoration: none;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        margin-left: -30px;
+                    }
+                }
+        }
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.videoYT{
+    border-radius: 10px;
+}
+
+.sectionRight {
+    width: 70%;
+    float: right;
+    margin-right: 5%;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+/*-----------INDEX--------*/
+.bienvenidos {
+    border-radius: 10px;
+    background-color: $negro-background;
+        p {
+            padding: 5px;
+        }
+}
+
+.imagenesSueltas img {
+    padding: 0px;
+    border: 2px solid #0e0d0d54;
+    width: 18rem;
+    height: 14rem;
+}
+
+.imagenesSueltas img:hover {
+    transform: scale(1.3, 1.3);
+}
+
+/*--------------PRODUCTOS--------------*/
+.sectionProductos {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: $negro-background;
+    margin-bottom: 10px;
+        h2 {
+            font-size: 1.5rem;
+        }
+}
+
+.image {
+    padding: 0px;
+    border: 2px solid #0e0d0d54;
+    width: 18rem;
+    height: 14rem;
+}
+
+/*-----------------------------------*/
+form {
+    width: 40%;
+}
+
+
+
+/*--------------FOOTER--------------------*/
+
+footer {
+    height: 50px;
+    color: white;
+    background-color: $negro-background;
+    border-top: 1px solid rgba(50, 50, 50, 0.3);
+    width: 100%;
+    position: fixed;
+    clear: both;  
+    margin-bottom: 0px; 
+    bottom: 0px; 
+    text-align: center;
+        ul {
+            display: flex;
+            margin-top: 8px;
+            list-style:none;
+        }
+            li a {
+                text-decoration: none;
+                list-style: none;
+            }
+}
+/*----------------------------*/
+/*---------TABLA--------------*/
+
+.gridImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+        img{
+            margin-bottom: 15px;
+            width: $width/2;
+            height: $height/2;
+        }
+}
+
+.card {
+    background-color: $negro-background;
+
+    .card-body{
+        margin-top: -20px;
+
+        .card-text {
+            font-size: large;
+        }
+    }
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 750px) {
+    .sectionNav {
+        width: 100%;
+        position: relative;
+            nav {
+                height: 60px;
+                margin-left: 0px;
+            }
+                ul{
+                    display: inline-flex;
+                    margin-top: 0px;
+                }
+    }
+
+    .sectionRight{
+        width: 90%;
+        margin-right: 7%;
+    }
+  }
+
+  /*
+  @media (max-width: 1000px) {
+      .imagenesSueltas img {
+          width: 13rem;
+          height: 10rem;
+      }
+  }
+  @media (min-width: 1001px) and (max-width: 1250px) {
+    .imagenesSueltas img {
+        width: 13rem;
+        height: 10rem;
+    }
+  }
+
+  @media (min-width:600px) and (max-width: 900px){
+    .imagenesSueltas img {
+        width: 17rem;
+        height: 13rem;
+    }
+  }*/

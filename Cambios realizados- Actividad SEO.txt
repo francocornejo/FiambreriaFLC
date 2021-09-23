@@ -1,0 +1,10 @@
+Se agregaron en todos los html sus correspondientes 
+KEYWORDS y DESCRIPTION.
+
+Tambien se corrigieron y arreglaron en las diferentes pantallas
+las propiedades "Alt" de las imagenes, poniendo texto descriptivo
+de cada imagen.
+
+Por ultimo se modifico titulos de las paginas. Por mi parte,
+queria mantener el mismo titulo principal en todas las pantallas, 
+y como titulo de la pestaña agregue a todas los html "FLC".
